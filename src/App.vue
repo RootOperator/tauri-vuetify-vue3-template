@@ -8,7 +8,6 @@
         <v-main>
             <v-container fluid>
                 <HelloWorld msg="Tauri app with Vuetify"></HelloWorld>
-                <v-btn elevation="2" rounded @click="test">Vuetify button {{ count }}</v-btn>
             </v-container>
         </v-main>
 
@@ -24,16 +23,6 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  },
-  data() {
-      return {
-          count: 0
-      }
-  },
-  methods: {
-    test() {
-        this.count = 5
-    }
   }
 }
 </script>
